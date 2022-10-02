@@ -36,19 +36,29 @@
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Status To Watch" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W2j-be-FmI">
                                 <rect key="frame" x="109.5" y="144" width="195" height="34"/>
-                                <color key="backgroundColor" red="0.58779370779999995" green="0.89027905460000001" blue="0.8745128512" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wzQ-dJ-ARL">
+                                <rect key="frame" x="178" y="437.5" width="58" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Clear"/>
+                                <connections>
+                                    <action selector="clearButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EFk-vD-CdM"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="wzQ-dJ-ARL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3O2-70-Q6y"/>
                             <constraint firstItem="W2j-be-FmI" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="7ef-3C-gI0"/>
                             <constraint firstItem="tki-uD-jKd" firstAttribute="top" secondItem="vAp-Vg-KVH" secondAttribute="bottom" constant="60" id="8F4-UD-Cta"/>
                             <constraint firstItem="W2j-be-FmI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="GLa-ka-C5P"/>
                             <constraint firstItem="tki-uD-jKd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="PRr-pq-SPk"/>
+                            <constraint firstItem="wzQ-dJ-ARL" firstAttribute="top" secondItem="tki-uD-jKd" secondAttribute="bottom" constant="50" id="aXD-uR-qzb"/>
                             <constraint firstItem="vAp-Vg-KVH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bu6-yX-719"/>
                             <constraint firstItem="vAp-Vg-KVH" firstAttribute="top" secondItem="W2j-be-FmI" secondAttribute="bottom" constant="60" id="e1E-Do-sTd"/>
                         </constraints>
@@ -66,6 +76,9 @@
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

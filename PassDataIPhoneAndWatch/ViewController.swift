@@ -28,7 +28,7 @@ class ViewController: UIViewController {
     }
     
     func updateStatusLabel() {
-        statusToWatchLabel.text = "Pass to iPhone: \(status)"
+        statusToWatchLabel.text = "Pass to Watch: \(status)"
         statusToWatchLabel.backgroundColor = .orange
     }
 
@@ -47,6 +47,13 @@ class ViewController: UIViewController {
         interactiveMessage()
         updateStatusLabel()
     }
+    
+    @IBAction func clearButtonPressed(_ sender: Any) {
+        statusToWatchLabel.text = "Status To Watch"
+        statusToWatchLabel.backgroundColor = .systemGreen
+        receiveStatusFromWatchLabel.text = "Receive Data From Watch"
+    }
+    
     
 }
 
