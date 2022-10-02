@@ -13,7 +13,57 @@
 		3BC7F4CE28EA2C5100FED1EC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BC7F4CC28EA2C5100FED1EC /* Main.storyboard */; };
 		3BC7F4D028EA2C5200FED1EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BC7F4CF28EA2C5200FED1EC /* Assets.xcassets */; };
 		3BC7F4D328EA2C5200FED1EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BC7F4D128EA2C5200FED1EC /* LaunchScreen.storyboard */; };
+		3BC7F4E028EA2D1B00FED1EC /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BC7F4DE28EA2D1B00FED1EC /* Interface.storyboard */; };
+		3BC7F4E228EA2D1D00FED1EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BC7F4E128EA2D1C00FED1EC /* Assets.xcassets */; };
+		3BC7F4E828EA2D1D00FED1EC /* PassDataWatch WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 3BC7F4E728EA2D1D00FED1EC /* PassDataWatch WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		3BC7F4ED28EA2D1D00FED1EC /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC7F4EC28EA2D1D00FED1EC /* InterfaceController.swift */; };
+		3BC7F4EF28EA2D1D00FED1EC /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC7F4EE28EA2D1D00FED1EC /* ExtensionDelegate.swift */; };
+		3BC7F4F128EA2D1D00FED1EC /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC7F4F028EA2D1D00FED1EC /* ComplicationController.swift */; };
+		3BC7F4F328EA2D1E00FED1EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BC7F4F228EA2D1E00FED1EC /* Assets.xcassets */; };
+		3BC7F4F728EA2D1E00FED1EC /* PassDataWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 3BC7F4DC28EA2D1B00FED1EC /* PassDataWatch.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3BC7F4E928EA2D1D00FED1EC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3BC7F4BB28EA2C5100FED1EC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3BC7F4E628EA2D1D00FED1EC;
+			remoteInfo = "PassDataWatch WatchKit Extension";
+		};
+		3BC7F4F528EA2D1E00FED1EC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3BC7F4BB28EA2C5100FED1EC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3BC7F4DB28EA2D1B00FED1EC;
+			remoteInfo = PassDataWatch;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		3BC7F4FB28EA2D1E00FED1EC /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				3BC7F4E828EA2D1D00FED1EC /* PassDataWatch WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3BC7F4FF28EA2D1E00FED1EC /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				3BC7F4F728EA2D1E00FED1EC /* PassDataWatch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		3BC7F4C328EA2C5100FED1EC /* PassDataIPhoneAndWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PassDataIPhoneAndWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,10 +74,26 @@
 		3BC7F4CF28EA2C5200FED1EC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3BC7F4D228EA2C5200FED1EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3BC7F4D428EA2C5200FED1EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3BC7F4DC28EA2D1B00FED1EC /* PassDataWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PassDataWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3BC7F4DF28EA2D1B00FED1EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		3BC7F4E128EA2D1C00FED1EC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3BC7F4E728EA2D1D00FED1EC /* PassDataWatch WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "PassDataWatch WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3BC7F4EC28EA2D1D00FED1EC /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		3BC7F4EE28EA2D1D00FED1EC /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		3BC7F4F028EA2D1D00FED1EC /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		3BC7F4F228EA2D1E00FED1EC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3BC7F4F428EA2D1E00FED1EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		3BC7F4C028EA2C5100FED1EC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3BC7F4E428EA2D1D00FED1EC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,6 +107,8 @@
 			isa = PBXGroup;
 			children = (
 				3BC7F4C528EA2C5100FED1EC /* PassDataIPhoneAndWatch */,
+				3BC7F4DD28EA2D1B00FED1EC /* PassDataWatch */,
+				3BC7F4EB28EA2D1D00FED1EC /* PassDataWatch WatchKit Extension */,
 				3BC7F4C428EA2C5100FED1EC /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +117,8 @@
 			isa = PBXGroup;
 			children = (
 				3BC7F4C328EA2C5100FED1EC /* PassDataIPhoneAndWatch.app */,
+				3BC7F4DC28EA2D1B00FED1EC /* PassDataWatch.app */,
+				3BC7F4E728EA2D1D00FED1EC /* PassDataWatch WatchKit Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -67,6 +137,27 @@
 			path = PassDataIPhoneAndWatch;
 			sourceTree = "<group>";
 		};
+		3BC7F4DD28EA2D1B00FED1EC /* PassDataWatch */ = {
+			isa = PBXGroup;
+			children = (
+				3BC7F4DE28EA2D1B00FED1EC /* Interface.storyboard */,
+				3BC7F4E128EA2D1C00FED1EC /* Assets.xcassets */,
+			);
+			path = PassDataWatch;
+			sourceTree = "<group>";
+		};
+		3BC7F4EB28EA2D1D00FED1EC /* PassDataWatch WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				3BC7F4EC28EA2D1D00FED1EC /* InterfaceController.swift */,
+				3BC7F4EE28EA2D1D00FED1EC /* ExtensionDelegate.swift */,
+				3BC7F4F028EA2D1D00FED1EC /* ComplicationController.swift */,
+				3BC7F4F228EA2D1E00FED1EC /* Assets.xcassets */,
+				3BC7F4F428EA2D1E00FED1EC /* Info.plist */,
+			);
+			path = "PassDataWatch WatchKit Extension";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,15 +168,51 @@
 				3BC7F4BF28EA2C5100FED1EC /* Sources */,
 				3BC7F4C028EA2C5100FED1EC /* Frameworks */,
 				3BC7F4C128EA2C5100FED1EC /* Resources */,
+				3BC7F4FF28EA2D1E00FED1EC /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				3BC7F4F628EA2D1E00FED1EC /* PBXTargetDependency */,
 			);
 			name = PassDataIPhoneAndWatch;
 			productName = PassDataIPhoneAndWatch;
 			productReference = 3BC7F4C328EA2C5100FED1EC /* PassDataIPhoneAndWatch.app */;
 			productType = "com.apple.product-type.application";
+		};
+		3BC7F4DB28EA2D1B00FED1EC /* PassDataWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3BC7F4FC28EA2D1E00FED1EC /* Build configuration list for PBXNativeTarget "PassDataWatch" */;
+			buildPhases = (
+				3BC7F4DA28EA2D1B00FED1EC /* Resources */,
+				3BC7F4FB28EA2D1E00FED1EC /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3BC7F4EA28EA2D1D00FED1EC /* PBXTargetDependency */,
+			);
+			name = PassDataWatch;
+			productName = PassDataWatch;
+			productReference = 3BC7F4DC28EA2D1B00FED1EC /* PassDataWatch.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		3BC7F4E628EA2D1D00FED1EC /* PassDataWatch WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3BC7F4F828EA2D1E00FED1EC /* Build configuration list for PBXNativeTarget "PassDataWatch WatchKit Extension" */;
+			buildPhases = (
+				3BC7F4E328EA2D1D00FED1EC /* Sources */,
+				3BC7F4E428EA2D1D00FED1EC /* Frameworks */,
+				3BC7F4E528EA2D1D00FED1EC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "PassDataWatch WatchKit Extension";
+			productName = "PassDataWatch WatchKit Extension";
+			productReference = 3BC7F4E728EA2D1D00FED1EC /* PassDataWatch WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -98,6 +225,12 @@
 				LastUpgradeCheck = 1340;
 				TargetAttributes = {
 					3BC7F4C228EA2C5100FED1EC = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					3BC7F4DB28EA2D1B00FED1EC = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					3BC7F4E628EA2D1D00FED1EC = {
 						CreatedOnToolsVersion = 13.4.1;
 					};
 				};
@@ -116,6 +249,8 @@
 			projectRoot = "";
 			targets = (
 				3BC7F4C228EA2C5100FED1EC /* PassDataIPhoneAndWatch */,
+				3BC7F4DB28EA2D1B00FED1EC /* PassDataWatch */,
+				3BC7F4E628EA2D1D00FED1EC /* PassDataWatch WatchKit Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -128,6 +263,23 @@
 				3BC7F4D328EA2C5200FED1EC /* LaunchScreen.storyboard in Resources */,
 				3BC7F4D028EA2C5200FED1EC /* Assets.xcassets in Resources */,
 				3BC7F4CE28EA2C5100FED1EC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3BC7F4DA28EA2D1B00FED1EC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3BC7F4E228EA2D1D00FED1EC /* Assets.xcassets in Resources */,
+				3BC7F4E028EA2D1B00FED1EC /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3BC7F4E528EA2D1D00FED1EC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3BC7F4F328EA2D1E00FED1EC /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,7 +296,30 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		3BC7F4E328EA2D1D00FED1EC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3BC7F4EF28EA2D1D00FED1EC /* ExtensionDelegate.swift in Sources */,
+				3BC7F4ED28EA2D1D00FED1EC /* InterfaceController.swift in Sources */,
+				3BC7F4F128EA2D1D00FED1EC /* ComplicationController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3BC7F4EA28EA2D1D00FED1EC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3BC7F4E628EA2D1D00FED1EC /* PassDataWatch WatchKit Extension */;
+			targetProxy = 3BC7F4E928EA2D1D00FED1EC /* PBXContainerItemProxy */;
+		};
+		3BC7F4F628EA2D1E00FED1EC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3BC7F4DB28EA2D1B00FED1EC /* PassDataWatch */;
+			targetProxy = 3BC7F4F528EA2D1E00FED1EC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		3BC7F4CC28EA2C5100FED1EC /* Main.storyboard */ = {
@@ -161,6 +336,14 @@
 				3BC7F4D228EA2C5200FED1EC /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		3BC7F4DE28EA2D1B00FED1EC /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3BC7F4DF28EA2D1B00FED1EC /* Base */,
+			);
+			name = Interface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -336,6 +519,118 @@
 			};
 			name = Release;
 		};
+		3BC7F4F928EA2D1E00FED1EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = G3VP62JDQQ;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "PassDataWatch WatchKit Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "PassDataWatch WatchKit Extension";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_WKExtensionDelegateClassName = "$(PRODUCT_MODULE_NAME).ExtensionDelegate";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dmitriikim.PassDataIPhoneAndWatch.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Debug;
+		};
+		3BC7F4FA28EA2D1E00FED1EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = G3VP62JDQQ;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "PassDataWatch WatchKit Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "PassDataWatch WatchKit Extension";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_WKExtensionDelegateClassName = "$(PRODUCT_MODULE_NAME).ExtensionDelegate";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dmitriikim.PassDataIPhoneAndWatch.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Release;
+		};
+		3BC7F4FD28EA2D1E00FED1EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = G3VP62JDQQ;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = PassDataWatch_WatchKit_Extension;
+				INFOPLIST_KEY_CFBundleDisplayName = PassDataWatch;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = dmitriikim.PassDataIPhoneAndWatch;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dmitriikim.PassDataIPhoneAndWatch.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Debug;
+		};
+		3BC7F4FE28EA2D1E00FED1EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = G3VP62JDQQ;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = PassDataWatch_WatchKit_Extension;
+				INFOPLIST_KEY_CFBundleDisplayName = PassDataWatch;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = dmitriikim.PassDataIPhoneAndWatch;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dmitriikim.PassDataIPhoneAndWatch.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -353,6 +648,24 @@
 			buildConfigurations = (
 				3BC7F4D828EA2C5200FED1EC /* Debug */,
 				3BC7F4D928EA2C5200FED1EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3BC7F4F828EA2D1E00FED1EC /* Build configuration list for PBXNativeTarget "PassDataWatch WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3BC7F4F928EA2D1E00FED1EC /* Debug */,
+				3BC7F4FA28EA2D1E00FED1EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3BC7F4FC28EA2D1E00FED1EC /* Build configuration list for PBXNativeTarget "PassDataWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3BC7F4FD28EA2D1E00FED1EC /* Debug */,
+				3BC7F4FE28EA2D1E00FED1EC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="20037" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="20006"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="PassDataWatch" customModuleProvider="target">
+                    <items>
+                        <label alignment="center" text="Pass To iPhone" textAlignment="center" numberOfLines="0" id="0O6-jx-IxF"/>
+                        <label alignment="center" verticalAlignment="center" text="Receive from iPhone" textAlignment="center" numberOfLines="0" id="Mrj-f6-GNU"/>
+                        <button width="1" alignment="left" verticalAlignment="bottom" title="Pass Data" id="Qr3-Wp-fkt">
+                            <color key="backgroundColor" red="0.0" green="0.56284224989999998" blue="0.31881666180000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="passDataButtonPressed" destination="AgC-eL-Hgc" id="4DH-F1-9Jn"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="passToIPhoneLabel" destination="0O6-jx-IxF" id="vtX-Hm-SUM"/>
+                        <outlet property="receiveFromIPhoneLabel" destination="Mrj-f6-GNU" id="dMi-Ij-kk1"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-231" y="-240"/>
+        </scene>
+    </scenes>
+</document>
